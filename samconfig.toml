@@ -1,8 +1,7 @@
 version = 0.1
 [default.deploy.parameters]
-stack_name = "next-app"
+stack_name = "next-app-lambda"
 resolve_s3 = true
 s3_prefix = "next-app"
 region = "us-west-2"
 capabilities = "CAPABILITY_IAM"
-image_repositories = ["NextAppStackFunction=943018136035.dkr.ecr.us-west-2.amazonaws.com/nextappe6718553/nextappstackfunctione45a3c19repo"]
