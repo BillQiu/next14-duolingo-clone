@@ -2,6 +2,9 @@ version = 0.1
 [default.deploy.parameters]
 stack_name = "next-app-lambda"
 resolve_s3 = true
-s3_prefix = "next-app"
+s3_prefix = "next-app-lambda"
 region = "us-west-2"
 capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+parameter_overrides = "NextBucketName=\"next-lambda-ssr\""
+image_repositories = []
