@@ -10,7 +10,7 @@ Resources:
   NextAppStackFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: app/
+      CodeUri: ./
       PackageType: Image
       Architectures:
       - x86_64

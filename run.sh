@@ -1,3 +1,5 @@
-#!/bin/bash
+#!/bin/bash -x
 
-node standalone/server.js
+[ ! -d '/tmp/cache' ] && mkdir -p /tmp/cache
+
+exec node server.js
